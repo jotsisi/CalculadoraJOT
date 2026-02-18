@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora JOT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="calc-title">Calculadora JOT</div>
+    <div class="calculator">
+      <div class="top-bar">
+        <span id="mode-indicator">RAD</span>
+      </div>
+      <div class="display-wrapper">
+        <div class="display-history" id="display-history"></div>
+        <div class="display-main" id="display">0</div>
+      </div>
+
+      <div class="buttons">
+        <!-- fila 1 -->
+        <button class="btn btn-func" data-action="clear">AC</button>
+        <button class="btn btn-func" data-action="backspace">⌫</button>
+        <button class="btn btn-func" data-action="toggle-mode">DEG</button>
+        <button class="btn btn-op" data-value="/">÷</button>
+
+        <!-- fila 2 -->
+        <button class="btn btn-func" data-func="sin(">sin</button>
+        <button class="btn btn-func" data-func="cos(">cos</button>
+        <button class="btn btn-func" data-func="tan(">tan</button>
+        <button class="btn btn-op" data-value="*">×</button>
+
+        <!-- fila 3 -->
+        <button class="btn btn-func" data-func="log10(">log</button>
+        <button class="btn btn-func" data-func="ln(">ln</button>
+        <button class="btn btn-func" data-func="sqrt(">√</button>
+        <button class="btn btn-op" data-value="-">−</button>
+
+        <!-- fila 4 -->
+        <button class="btn btn-func" data-func="^2">x²</button>
+        <button class="btn btn-func" data-func="^3">x³</button>
+        <button class="btn btn-func" data-func="fact(">n!</button>
+        <button class="btn btn-op" data-value="+">+</button>
+
+        <!-- fila 5 -->
+        <button class="btn btn-num" data-value="7">7</button>
+        <button class="btn btn-num" data-value="8">8</button>
+        <button class="btn btn-num" data-value="9">9</button>
+        <button class="btn btn-func" data-value="(">(</button>
+
+        <!-- fila 6 -->
+        <button class="btn btn-num" data-value="4">4</button>
+        <button class="btn btn-num" data-value="5">5</button>
+        <button class="btn btn-num" data-value="6">6</button>
+        <button class="btn btn-func" data-value=")">)</button>
+
+        <!-- fila 7 -->
+        <button class="btn btn-num" data-value="1">1</button>
+        <button class="btn btn-num" data-value="2">2</button>
+        <button class="btn btn-num" data-value="3">3</button>
+        <button class="btn btn-func" data-func="pi">π</button>
+
+        <!-- fila 8 -->
+        <button class="btn btn-num btn-wide" data-value="0">0</button>
+        <button class="btn btn-num" data-value=".">.</button>
+        <button class="btn btn-func" data-func="e">e</button>
+        <button class="btn btn-eq" data-action="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
